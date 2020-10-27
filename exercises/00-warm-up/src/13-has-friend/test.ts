@@ -1,11 +1,11 @@
 import { hasFriend } from "./index";
 
-describe("Find if array contains friend", () => {
-  test("has friend", () => {
+describe("hasFriend function", () => {
+  test("should return true, if array includes 'friend'", () => {
     expect(hasFriend(["enemy", "friend", "enemy"])).toEqual(true);
   });
 
-  test("has no friend", () => {
+  test("should return true, if array does not include 'friend'", () => {
     expect(hasFriend(["enemy", "enemy"])).toEqual(false);
   });
 });

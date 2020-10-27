@@ -1,15 +1,9 @@
 import { filterApples } from "./index";
 
-describe("Filter for apples", () => {
-  test("no apples", () => {
+describe("filterApples function", () => {
+  test("should remove all words from array that do not equal 'apple'", () => {
     expect(filterApples(["pie", "pie"])).toEqual([]);
-  });
-
-  test("one apple", () => {
     expect(filterApples(["pie", "apple"])).toEqual(["apple"]);
-  });
-
-  test("multiple apples", () => {
     expect(filterApples(["apple", "MELLON", "apple", "apple"])).toEqual(["apple", "apple", "apple"]);
   });
 });

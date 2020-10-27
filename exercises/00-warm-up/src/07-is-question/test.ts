@@ -1,11 +1,11 @@
 import { isQuestion } from "./index";
 
-describe("Find if sentence is a question", () => {
-  test("is a question", () => {
+describe("isQuestion function", () => {
+  test("should return true, if last character in string is a question mark", () => {
     expect(isQuestion("Is this getting harder?")).toEqual(true);
   });
 
-  test("is not a question", () => {
+  test("should return false, if last character in string is not a question mark", () => {
     expect(isQuestion("It is not")).toEqual(false);
   });
 });

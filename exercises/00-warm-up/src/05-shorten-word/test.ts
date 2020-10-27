@@ -1,11 +1,9 @@
 import { shortenWord } from "./index";
 
-describe("Shorten word", () => {
-  test("a long word", () => {
+describe("shortenWord function", () => {
+  test("should return the first 3 characters of a string", () => {
     expect(shortenWord("Earthquake")).toEqual("Ear");
-  });
-
-  test("a not so long word", () => {
     expect(shortenWord("Getto")).toEqual("Get");
+    expect(shortenWord("Table")).toEqual("Tab");
   });
 });

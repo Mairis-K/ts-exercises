@@ -1,11 +1,9 @@
 import { findThirdLetter } from "./index";
 
-describe("Find third letter in a word", () => {
-  test("short word", () => {
+describe("findThirdLetter function", () => {
+  test("should return the third character from string", () => {
     expect(findThirdLetter("WATER")).toEqual("T");
-  });
-
-  test("long word", () => {
     expect(findThirdLetter("MELLON")).toEqual("L");
+    expect(findThirdLetter("GAME OF THRONES")).toEqual("M");
   });
 });

@@ -1,11 +1,9 @@
 import { replaceCommas } from "./index";
 
-describe("Replace commas with question marks", () => {
-  test("one comma", () => {
+describe("replaceCommas function", () => {
+  test("should replace all commas with question marks in a string", () => {
     expect(replaceCommas("Peanut butter, Sandwich")).toEqual("Peanut butter? Sandwich");
-  });
-
-  test("multiple commas", () => {
     expect(replaceCommas("Go, Where,,,")).toEqual("Go? Where???");
+    expect(replaceCommas(",,,")).toEqual("???");
   });
 });
