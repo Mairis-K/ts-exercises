@@ -10,7 +10,7 @@ Your goal is to make all tests pass or, in other words, make them all green.
 
 ## Getting Ready
 
-Open this folder (`01-easy`) in the Visual Studio Code and download all the dependencies by executing `npm install` from the VS Code's terminal.
+Open this folder (`01-challenges`) in the Visual Studio Code and download all the dependencies by executing `npm install` from the VS Code's terminal.
 
 ## Executing Tests
 
