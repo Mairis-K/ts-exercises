@@ -38,7 +38,3 @@ Summary of design specs:
   - its title,
   - the average rating,
   - and whether it is checked out or on the shelves.
-
-## Getting Ready
-
-Open `package.json` and read the documentation for the libraries used.
