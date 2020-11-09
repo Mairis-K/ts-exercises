@@ -8,6 +8,13 @@
  * Output: true
  */
 
-function isNumber(input: any) { }
+function isNumber(input: any) { 
+    if(input === parseInt(input, 10)){ 
+        return true;
+      } else {
+        return false;
+      }
+    }
+
 
 export { isNumber };

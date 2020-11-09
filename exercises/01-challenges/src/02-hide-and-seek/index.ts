@@ -3,6 +3,8 @@
  * Write a function that returns the hidden name.
  */
 
-function hideAndSeek(crowd: string) { }
+function hideAndSeek(crowd: string) { 
+    return crowd.replace( /[^a-z]/g, '' );
+ }
 
 export { hideAndSeek };

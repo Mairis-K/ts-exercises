@@ -7,6 +7,10 @@
  * Output: ["apple", "apple"]
  */
 
-function filterApples(input: string[]) { }
+function filterApples(input: string[]) { 
+     return input = input.filter(input=>~input.indexOf("ap"));
+    
+
+}
 
 export { filterApples };

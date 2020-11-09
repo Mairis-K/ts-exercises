@@ -4,6 +4,11 @@
  * Create a function that takes in an array of names and returns the name of the secret society.
  */
 
-function secretSociety(names: string[]) { }
+function secretSociety(names: string[]) { 
+      var  newName = names.sort((a, b) => a.localeCompare(b));
+      var newNameOne = newName.map((newName) => newName[0]).join('')
+      return newNameOne
+       
+   }
 
 export { secretSociety };

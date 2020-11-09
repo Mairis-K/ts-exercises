@@ -7,6 +7,17 @@
  * Output: true
  */
 
-function isQuestion(input: string) { }
+function isQuestion(input: string) { 
+    if (input.endsWith("?")) {
+        return true
+    } else {
+        return false
+    }
+}
+       
+    
+    
+ 
+
 
 export { isQuestion };

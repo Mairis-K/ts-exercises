@@ -8,6 +8,12 @@
  * Output: true
  */
 
-function hasFriend(input: string[]) { }
+function hasFriend(input: string[]) { 
+   if (input.includes("friend")){
+       return true
+   } else {
+       return false
+   }
+}
 
 export { hasFriend };

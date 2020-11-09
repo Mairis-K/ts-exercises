@@ -8,6 +8,9 @@
  * Output: "Peanut? Butter? Sandwich"
  */
 
-function replaceCommas(input: string) { }
+function replaceCommas(input: string) { 
+   var b =/,/gi
+    return input.replace(b, '?')
+}
 
 export { replaceCommas };

@@ -4,6 +4,12 @@
  * If you can't find Nemo, return "I can't find Nemo :(".
  */
 
-function findingNemo(input: string) { }
+function findingNemo(input: string) { 
+    var a = input.split()
+  var b = input.indexOf("Nemo")
+  if (b)
+
+
+}
 
 export { findingNemo };
