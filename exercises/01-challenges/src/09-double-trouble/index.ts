@@ -5,6 +5,14 @@
  * returns a new array in the same sequential order as the old array (minus duplicates).
  */
 
-function doubleTrouble(list: string[]) { }
+function doubleTrouble(list: string[]) {
+//const uniqueSet = new Set(list);
+//console.log(uniqueSet)
+
+
+}
+
+
+
 
 export { doubleTrouble };

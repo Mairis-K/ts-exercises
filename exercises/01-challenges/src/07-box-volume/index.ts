@@ -11,6 +11,8 @@
  * Output: 266
  */
 
-function boxVolume(boxes: number[][]) { }
+function boxVolume(boxes: number[][]) { 
+    
+}
 
 export { boxVolume };

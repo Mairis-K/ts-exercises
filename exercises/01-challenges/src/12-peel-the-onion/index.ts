@@ -19,6 +19,32 @@
 ]
  */
 
-function peelTheOnion(onion: (string | number)[][]) { }
+function peelTheOnion(onion: (string | number)[][]): string[] | number[] {
+  console.log('Input', onion);
+  const removedHorizontal: any[] = [];
+
+  for (let i = 0; i < onion.length; i++) {
+    const thisElement = onion[i];
+
+    if (i !== 0 && i !== onion.length - 1) {
+      const innerArray: any[] = [];
+
+      for (let j = 0; j < thisElement.length; j++) {
+        const thisCell: string | number = thisElement[j]
+
+        if (j !== 0 && j !== thisElement.length - 1) {
+          innerArray.push(thisCell)
+        }
+      }
+      removedHorizontal.push(innerArray)
+      console.log('innerArrat', innerArray)
+    }
+  }
+  console.log('removeHorizontal', removedHorizontal);
+  return removedHorizontal
+}
 
 export { peelTheOnion };
+
+
+

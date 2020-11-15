@@ -3,6 +3,8 @@
  * returns a fortune prediction like so: "You will meet X in Y, and find Z in a N room together."
  */
 
-function fortuneTeller(color: string, location: string, name: string, item: string) { }
-
-export { fortuneTeller };
+function fortuneTeller(color: string, location: string, name: string, item: string) { 
+    const result = `You will meet ${name} in ${location}, and find ${item} in a ${color} room together.`
+    return result;
+}
+export { fortuneTeller }
