@@ -3,7 +3,11 @@
  * Create the function that takes an array with objects and returns the sum of people's budgets.
  */
 
-function vacationBudget(family: Person[]) { }
+function vacationBudget(family: Person[]): any { 
+    const allBudget = family.reduce((one, two) => one + two.budget, 0);
+    console.log(allBudget)
+    return allBudget
+}
 
 export { vacationBudget };
 
